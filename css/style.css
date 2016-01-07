@@ -1,0 +1,189 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+p {
+	font-size: 16px;
+}
+/********
+Navbar
+*********/
+
+.navbar-inverse {
+	margin-bottom: 0;
+	background-color: #5bc0de;
+	height: 50px;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #fff;
+}
+
+.navbar-brand {
+	font-size: 26px;
+	margin-left: -17px;
+	margin-top: 3px;
+}
+
+.navbar-toggle {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.reg {
+	font-size: 12px;
+}
+
+.subscribe {
+	font-size: 14px;
+	background-color: #5cb85c;
+	padding: 5px;
+	width: 75px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.subscribe a {
+	color: #fff;
+}
+
+/********
+Jumbo and buttons
+*********/
+
+.image {
+	background-image: url("../images/hero-old.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 240px;
+}
+
+.goodies {
+	text-align: center;
+	padding-bottom: 20px;
+	border-bottom: 3px dotted #ccc;
+}
+
+.btn {
+	display: block;
+	margin: 20px auto;
+	text-transform: uppercase;
+}
+
+.btn-info {
+	background-color: #5bc0de;
+}
+
+.btn-success {
+	background-color: #5cb85c;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+	border-radius: 0;
+}
+
+/********
+Info Section
+*********/
+.content {
+	text-align: center;
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-bottom: 15px;
+}
+
+.row {
+	padding-bottom: 20px;
+	border-bottom: 3px dotted #ccc;
+}
+
+/********
+Footer
+*********/
+
+.main-footer h3 {
+	font-size: 16;
+	color: #5bc0de;
+}
+
+.main-footer li {
+	font-size: 12px;
+}
+
+.main-footer ul li a img {
+	width: 25px;
+}
+
+.twitter {
+	color: blue;
+}
+
+/********
+Media Queries
+*********/
+
+@media all and (min-width: 768px) {
+	.subscribe {
+		display: none;
+	}
+	.image {
+		height: 430px;
+	}
+	.goodies {
+		float: left;
+		border: none;
+		width: 250px;
+		margin-left: -5%;
+		margin-top: 7%;
+	}
+	.navbar-inverse .navbar-nav>li>a {
+		color: #fff;
+		margin-right: 15px;
+	}
+	.navbar-inverse .navbar-nav>.active>a {
+		background-color: #5cb85c;
+	}
+	.navbar-brand {
+		margin-left: 20px;
+	}
+	.row {
+		text-align: center;
+	}
+}
+
+@media all and (max-width: 410px) {
+	.container img {
+		float: left;
+		width: 50%;
+	}
+	.container .description {
+		float: left;
+		width: 50%;
+	}
+}
+
+/***This was kind of a cheat - The images were overlapping with the text at 
+at around the 400px mark, so I just set up a media query
+at the point where the layout started getting messed up.  I wanted
+the same breakpoint as the BarkBox site but I couldnt get it to work.
+Maybe because I was using Bootstrap, but the setups I tried before Bootstrap
+werent working either.****/
+
+@media all and (min-width: 410px) and (max-width: 768px) {
+	.row {
+		text-align: center;
+	}
+}
+
+
+
